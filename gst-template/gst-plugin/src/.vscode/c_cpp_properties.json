@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                // 添加 GStreamer 和 GLib 的標準安裝路徑
+                "/usr/include/gstreamer-1.0",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include/glib-2.0",
+                // 這個路徑包含 glibconfig.h，在某些系統上是必需的
+                "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
